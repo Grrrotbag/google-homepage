@@ -1,0 +1,129 @@
+/* https://www.digitalocean.com/community/tutorials/css-minimal-css-reset */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: arial, sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* End Reset */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+main {
+  text-align: center;
+  margin-top: 400px;
+}
+
+.searchform {
+  margin: auto;
+  margin-top: 25px;
+  position: relative;
+  width: 500px;
+}
+
+.searchform input {
+  padding-left: 24px;
+  width: 470px; /* searchform width - 30px */
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  z-index: 3;
+  height: 25px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  /* width: 482px; */
+  /* width: auto; */
+  padding: 10px 30px;
+}
+
+.searchform img {
+  position: absolute;
+  left: 20px;
+  pointer-events: none;
+  top: 0.8rem;
+}
+
+button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+footer {
+  background: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.location {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.inline li {
+  display: inline;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer1 {
+  justify-content: flex-start;
+  min-width: 30%;
+  order: 1;
+}
+
+.footer2 {
+  order: 2;
+}
+
+.footer3 {
+  justify-content: flex-end;
+  order: 3;
+}
