@@ -90,6 +90,13 @@ button {
   user-select: none;
 }
 
+button:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
 footer {
   background: #f2f2f2;
   position: absolute;
@@ -111,19 +118,31 @@ footer {
 .footer-links {
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
+  font-size: 0.8em;
+}
+
+.footer-links li {
+  padding: 15px;
 }
 
 .footer1 {
+  padding: 10px 0;
+  color: #70757a;
   justify-content: flex-start;
   min-width: 30%;
   order: 1;
 }
 
 .footer2 {
+  padding: 10px 0;
+  color: #70757a;
   order: 2;
 }
 
 .footer3 {
+  padding: 10px 0;
+  color: #70757a;
   justify-content: flex-end;
   order: 3;
 }
