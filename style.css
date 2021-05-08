@@ -19,6 +19,9 @@ ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #222;
 }
 
 ol,
@@ -35,6 +38,16 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 6px;
+  height: 60px;
+}
+
+.nav a {
+  margin-left: 15px;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px;
+  color: #222;
+  text-decoration: none;
 }
 
 main {
@@ -46,31 +59,64 @@ main {
   margin: auto;
   margin-top: 25px;
   position: relative;
-  width: 500px;
+  width: 600px;
 }
 
-.searchform input {
-  padding-left: 24px;
-  width: 470px; /* searchform width - 30px */
+.search {
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
   background: #fff;
   display: flex;
   border: 1px solid #dfe1e5;
   box-shadow: none;
   border-radius: 24px;
   z-index: 3;
-  height: 25px;
+  height: 44px;
   margin: 0 auto;
-  margin-bottom: 25px;
-  /* width: 482px; */
-  /* width: auto; */
-  padding: 10px 30px;
+  margin-bottom: 15px;
 }
 
-.searchform img {
+.search:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.searchform input {
+  width: 570px; /* searchform width - 30px */
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  -webkit-tap-highlight-color: transparent;
+  margin-top: -7px;
+  height: 34px;
+  font-size: 16px;
+  padding: 10px 40px;
+}
+
+#spyglass {
   position: absolute;
   left: 20px;
   pointer-events: none;
   top: 0.8rem;
+  color: grey;
+}
+
+#microphone {
+  position: absolute;
+  left: 560px;
+  pointer-events: none;
+  top: 0.7rem;
+  height: 24px;
+  width: 15px;
 }
 
 button {
@@ -92,9 +138,9 @@ button {
 
 button:hover {
   box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
-    background-color: #f8f9fa;
-    border: 1px solid #dadce0;
-    color: #202124;
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
 }
 
 footer {
@@ -113,6 +159,11 @@ footer {
 
 .inline li {
   display: inline;
+  box-sizing: border-box;
+  height: 48px;
+  line-height: normal;
+  padding: 0 4px;
+  vertical-align: middle;
 }
 
 .footer-links {
